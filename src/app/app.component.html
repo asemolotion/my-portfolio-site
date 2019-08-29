@@ -1,10 +1,16 @@
 
+<div class='d-flex flex-column' style="min-height: 100vh">
 
-<a routerLink='/'>Home</a>
-<a routerLink='/profile'>Profile</a>
-<a routerLink='/skills'>Skills</a>
-<a routerLink='/works'>Works</a>
-<a routerLink='/articles'>Articles</a>
-<a routerLink='/contact'>Contact</a>
-
-<router-outlet></router-outlet>
+    <app-header></app-header>
+    <!-- ヘッダー -->
+  
+    <div class='container mb-auto'>
+    <!-- mb-autoにしてfooterまでを空けるように。 -->
+      <router-outlet></router-outlet>
+      <!-- 内容の表示部分 -->
+    </div>
+  
+    <app-footer></app-footer>
+    <!-- フッター -->
+  
+</div>

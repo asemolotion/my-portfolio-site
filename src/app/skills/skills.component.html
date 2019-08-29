@@ -1,1 +1,70 @@
-<p>skills works!</p>
+
+<div class='my-2'>
+	<section>
+		<div>
+			<h3>Skills</h3>
+		</div>
+	</section>
+</div>
+
+<div>
+	<!-- プログラミング言語 -->
+	<div class='card mb-1'>
+		<div class='card-body'>   
+			<h5 class='card-title'>プログラミング言語</h5>
+			<span *ngFor='let skill of programmingLanguages' class='badge badge-secondary mr-2'>{{ skill }}</span>
+		</div>
+	</div>
+
+	<!-- マークアップ言語 -->
+	<div class='card mb-1'>
+		<div class='card-body'>   
+			<h5 class='card-title'>マークアップ言語</h5>
+			<span *ngFor='let skill of markupLanguages' class='badge badge-secondary mr-2'>{{ skill }}</span>
+		</div>
+	</div>
+
+	<!-- フロントエンド -->
+	<div class='card mb-1'>
+		<div class='card-body'>   
+			<h5 class='card-title'>フロントエンド</h5>
+			<span *ngFor='let skill of frontendSkills' class='badge badge-secondary mr-2'>{{ skill }}</span>
+		</div>
+	</div>
+
+	<!-- python -->
+	<div class='card mb-1'>
+		<div class='card-body'>   
+			<h5 class='card-title'>python</h5>
+				<span>アプリケーション</span><br>
+				<span *ngFor='let skill of pythonSkills.webApps' class='badge badge-secondary mr-2'>{{ skill }}</span>
+				<hr>
+				<span>スクレイピング</span><br>
+				<span *ngFor='let skill of pythonSkills.scraping' class='badge badge-secondary mr-2'>{{ skill }}</span>
+				<hr>        
+				<span>スタックキュー</span><br>
+				<span *ngFor='let skill of pythonSkills.stackQueue' class='badge badge-secondary mr-2'>{{ skill }}</span>
+				<hr>
+				<span>機械学習</span><br>
+				<span *ngFor='let skill of pythonSkills.machineLearningPackages' class='badge badge-secondary mr-2'>{{ skill }}</span>
+				<hr>        
+		</div>
+	</div>
+
+	<!-- DB -->
+	<div class='card mb-1'>
+		<div class='card-body'>   
+			<h5 class='card-title'>DB</h5>
+			<span *ngFor='let skill of DB' class='badge badge-secondary mr-2'>{{ skill }}</span>
+		</div>
+	</div>
+
+	<!-- クラウド -->
+	<div class='card mb-1'>
+		<div class='card-body'>   
+			<h5 class='card-title'>クラウドサービス</h5>
+			<span *ngFor='let skill of cloudService' class='badge badge-secondary mr-2'>{{ skill }}</span>
+		</div>
+	</div>  
+
+</div>
