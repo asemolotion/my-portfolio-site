@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/hiroishizai/Dropbox/my_portfolio_site/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/hiroishizai/Dropbox/angular-projects/my_portfolio_site/src/styles.css */"./src/styles.css");
 
 
 /***/ })
